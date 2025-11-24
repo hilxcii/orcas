@@ -346,7 +346,7 @@ export default function OrcaTriadWebsite() {
                   Based in South Florida, Sandra has become a trusted advisor to the region's most active developers and investors. Her expertise spans the full capital stack—from senior debt through preferred and common equity—and across all asset classes, with particular strength in multifamily, mixed-use, and commercial development.
                 </p>
               </div>
-              <a href="https://www.linkedin.com/in/sandra-flores" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gray-900 hover:text-gray-600 transition-colors">
+              <a href="https://www.linkedin.com/in/sandra-flores-47829714/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gray-900 hover:text-gray-600 transition-colors">
                 <Linkedin className="w-5 h-5" />
                 <span className="font-medium">Connect on LinkedIn</span>
               </a>
@@ -393,7 +393,7 @@ export default function OrcaTriadWebsite() {
                     <Linkedin className="w-5 h-5 text-gray-600 mt-1" />
                     <div>
                       <div className="text-sm text-gray-500 mb-1">LinkedIn</div>
-                      <a href="https://www.linkedin.com/in/sandra-flores" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">Sandra Flores</a>
+                      <a href="https://www.linkedin.com/in/sandra-flores-47829714/" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">Sandra Flores</a>
                     </div>
                   </div>
                 </div>
