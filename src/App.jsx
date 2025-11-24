@@ -85,7 +85,7 @@ export default function OrcaTriadWebsite() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <img 	src="/logo.png" 
+          <img 	src="orcas/logo.png" 
 	alt="Orca Triad Advisors" 
 	className="h-8 md:h-10" />
           <div className="hidden md:flex items-center gap-8 text-sm">
@@ -543,7 +543,7 @@ export default function OrcaTriadWebsite() {
           <div className="grid md:grid-cols-3 gap-12 mb-12">
             <div>
               <img 
-		src="/logo-white.png" 
+		src="orcas/logo-white.png" 
 		alt="Orca Triad Advisors" 
 		className="h-8 mb-4" 
 	/>
