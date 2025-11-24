@@ -85,7 +85,9 @@ export default function OrcaTriadWebsite() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <img src="/logo.png" alt="Orca Triad Advisors" className="h-8 md:h-10" />
+          <img 	src="/logo.png" 
+	alt="Orca Triad Advisors" 
+	className="h-8 md:h-10" />
           <div className="hidden md:flex items-center gap-8 text-sm">
             <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors">About</a>
             <a href="#services" className="text-gray-600 hover:text-gray-900 transition-colors">Services</a>
@@ -540,7 +542,11 @@ export default function OrcaTriadWebsite() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-12 mb-12">
             <div>
-              <img src="/logo-white.png" alt="Orca Triad Advisors" className="h-8 mb-4" />
+              <img 
+		src="/logo-white.png" 
+		alt="Orca Triad Advisors" 
+		className="h-8 mb-4" 
+	/>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Strategic Capital Placement | Debt & Equity Advisory
               </p>
