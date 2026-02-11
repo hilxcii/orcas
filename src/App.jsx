@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
-import { Building2, TrendingUp, Users, Mail, Phone, MapPin, Linkedin, ChevronRight, CheckCircle2 } from 'lucide-react';
+import { Building2, TrendingUp, Users, Mail, Phone, MapPin, Linkedin, ChevronRight, CheckCircle2, Globe, Shield, Briefcase } from 'lucide-react';
 
 export default function OrcaTriadWebsite() {
-  // COLOR CUSTOMIZATION - Change these to update the entire site colors
   const colors = {
-    primary: 'rgb(26, 35, 50)',      // Deep Navy - change to your brand color
-    primaryHover: 'rgb(15, 23, 35)', // Darker navy for hover
-    accent: 'rgb(184, 148, 111)',    // Warm Gold - change to your accent
-    background: 'rgb(248, 246, 243)', // Cream background
+    primary: 'rgb(26, 35, 50)',
+    primaryHover: 'rgb(15, 23, 35)',
+    accent: 'rgb(184, 148, 111)',
+    background: 'rgb(248, 246, 243)',
   };
 
   const [formData, setFormData] = useState({
@@ -84,32 +83,31 @@ export default function OrcaTriadWebsite() {
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
-  <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-    <img 
-      src="/logo.png" 
-      alt="Orca Triad Advisors" 
-      className="h-8 md:h-10"
-    />
-    <div className="hidden md:flex items-center gap-8 text-sm">
-      <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors">About</a>
-      <a href="#services" className="text-gray-600 hover:text-gray-900 transition-colors">Services</a>
-      <a href="#projects" className="text-gray-600 hover:text-gray-900 transition-colors">Projects</a>
-      <a href="#contact" className="px-6 py-2 bg-gray-900 text-white hover:bg-gray-800 transition-colors">Contact</a>
-    </div>
-  </div>
-</nav>
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          <img src="/logo.png" alt="Orca Triad Advisors" className="h-8 md:h-10" />
+          <div className="hidden md:flex items-center gap-8 text-sm">
+            <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors">About</a>
+            <a href="#services" className="text-gray-600 hover:text-gray-900 transition-colors">Services</a>
+            <a href="#projects" className="text-gray-600 hover:text-gray-900 transition-colors">Projects</a>
+            <a href="#contact" className="px-6 py-2 text-white transition-colors" style={{ backgroundColor: colors.primary }}>Contact</a>
+          </div>
+        </div>
+      </nav>
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-4xl">
             <div className="inline-block px-4 py-1 bg-gray-100 text-gray-700 text-sm mb-6 rounded-full">
-              15 Years Experience | South Florida Based
+              20 Years Experience | Domestic &amp; International Markets
             </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-gray-900 mb-6 leading-tight">
               Strategic Capital Solutions for <span className="font-normal">Visionary Real Estate Projects</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-3xl">
+            <p className="text-xl text-gray-600 mb-4 leading-relaxed max-w-3xl">
+              We help you navigate the treacherous waters of commercial real estate and private capital raises.
+            </p>
+            <p className="text-lg text-gray-500 mb-10 leading-relaxed max-w-3xl">
               Debt and equity placement across all asset classes. Trusted advisor to developers and businesses seeking strategic financing solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -135,10 +133,10 @@ export default function OrcaTriadWebsite() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Orca Triad Advisors serves as a strategic intermediary connecting developers and businesses with the capital that fuels growth and innovation. With 15 years of specialized experience in private capital markets, principal Sandra Flores has built a reputation for integrity, market intelligence, and results-driven advisory.
+                  Orca Triad Advisors serves as a strategic intermediary connecting developers and businesses with the capital that fuels growth and innovation. With 20 years of specialized experience in private capital markets, principal Sandra Flores has built a reputation for integrity, market intelligence, and results-driven advisory.
                 </p>
                 <p>
-                  Based in South Florida and serving clients nationally, we leverage deep relationships across institutional lenders, private equity funds, family offices, debt funds, and sovereign wealth investors. Our boutique approach ensures personalized attention and creative structuring for even the most complex transactions.
+                  Serving clients across the United States and internationally, we leverage deep relationships across institutional lenders, private equity funds, family offices, debt funds, and sovereign wealth investors. Our boutique approach ensures personalized attention and creative structuring for even the most complex transactions.
                 </p>
                 <p>
                   Whether you're seeking debt placement for an acquisition, equity capital for development, or strategic refinancing, Orca Triad delivers tailored solutions that align with your long-term objectives.
@@ -158,7 +156,7 @@ export default function OrcaTriadWebsite() {
               </div>
               <div className="bg-gray-50 p-8 rounded-lg">
                 <Users className="w-10 h-10 text-gray-900 mb-4" />
-                <div className="text-3xl font-light text-gray-900 mb-2">15</div>
+                <div className="text-3xl font-light text-gray-900 mb-2">20</div>
                 <div className="text-sm text-gray-600">Years Experience</div>
               </div>
               <div className="bg-gray-50 p-8 rounded-lg">
@@ -171,17 +169,129 @@ export default function OrcaTriadWebsite() {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Markets Section */}
+      <section className="py-20 px-6 bg-gray-900 text-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-light mb-4">Markets We Serve</h2>
+            <p className="text-xl text-gray-400">Domestic and international capital placement across key markets</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <Globe className="w-6 h-6 text-gray-400" />
+                <h3 className="text-2xl font-light">United States</h3>
+              </div>
+              <p className="text-gray-400 mb-6 leading-relaxed">
+                Full-service capital advisory across major U.S. markets, covering all asset classes with deep lender and investor relationships.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                {['Florida', 'Texas', 'Georgia', 'California', 'New York', 'New Jersey', 'North Carolina', 'Illinois'].map((state) => (
+                  <span key={state} className="px-4 py-2 border border-gray-700 text-gray-300 text-sm rounded-full">
+                    {state}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <Globe className="w-6 h-6 text-gray-400" />
+                <h3 className="text-2xl font-light">International</h3>
+              </div>
+              <p className="text-gray-400 mb-6 leading-relaxed">
+                Specialized advisory for cross-border transactions and complex international capital placements in select global markets.
+              </p>
+              <div className="mb-4">
+                <div className="text-sm text-gray-500 mb-3 uppercase tracking-wider">Europe &amp; Middle East</div>
+                <div className="flex flex-wrap gap-3">
+                  {['England', 'Spain', 'France', 'Turkey'].map((country) => (
+                    <span key={country} className="px-4 py-2 border border-gray-700 text-gray-300 text-sm rounded-full">
+                      {country}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <div className="text-sm text-gray-500 mb-3 uppercase tracking-wider">South America</div>
+                <div className="flex flex-wrap gap-3">
+                  {['Peru', 'Bolivia', 'Argentina', 'Chile'].map((country) => (
+                    <span key={country} className="px-4 py-2 border border-gray-700 text-gray-300 text-sm rounded-full">
+                      {country}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Complex Transactions Section */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <div className="inline-block px-4 py-1 bg-gray-100 text-gray-700 text-sm mb-6 rounded-full">
+                Specialized Expertise
+              </div>
+              <h2 className="text-4xl font-light text-gray-900 mb-6">
+                Complex Transactions <span className="font-normal">Require Expert Navigation</span>
+              </h2>
+              <div className="space-y-4 text-gray-600 leading-relaxed">
+                <p>
+                  Not every transaction fits a conventional lending box. Orca Triad Advisors specializes in structuring capital solutions for complex transactions where traditional lending institutions are unable to proceed due to heightened regulatory compliance requirements.
+                </p>
+                <p>
+                  Our team has extensive experience navigating transactions involving OFAC (Office of Foreign Assets Control) screening considerations, Anti-Money Laundering (AML) compliance complexities, and other regulatory challenges that require specialized knowledge and creative structuring.
+                </p>
+                <p>
+                  Where others see obstacles, we identify pathways. Our deep understanding of compliance frameworks, combined with our network of specialized capital providers, enables us to deliver results for transactions that demand a higher level of expertise and diligence.
+                </p>
+              </div>
+            </div>
+            <div className="bg-gray-50 p-10 rounded-lg">
+              <Shield className="w-12 h-12 text-gray-900 mb-6" />
+              <h3 className="text-xl font-medium text-gray-900 mb-6">Our Compliance-Ready Approach</h3>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-gray-900 mt-1 flex-shrink-0" />
+                  <span className="text-gray-600">Thorough due diligence and regulatory assessment</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-gray-900 mt-1 flex-shrink-0" />
+                  <span className="text-gray-600">OFAC and AML compliance navigation</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-gray-900 mt-1 flex-shrink-0" />
+                  <span className="text-gray-600">Access to specialized lenders experienced in complex compliance scenarios</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-gray-900 mt-1 flex-shrink-0" />
+                  <span className="text-gray-600">Creative capital structuring for non-traditional transactions</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-gray-900 mt-1 flex-shrink-0" />
+                  <span className="text-gray-600">Cross-border transaction expertise</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section - Now 3 cards */}
       <section id="services" className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-light text-gray-900 mb-4">
               What We Do
             </h2>
-            <p className="text-xl text-gray-600">Comprehensive capital placement across debt and equity</p>
+            <p className="text-xl text-gray-600">Comprehensive capital placement across debt, equity, and strategic advisory</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {/* Debt Placement */}
             <div className="bg-white p-10 rounded-lg border border-gray-200 hover:border-gray-900 transition-all">
               <div className="w-12 h-12 bg-gray-900 text-white flex items-center justify-center rounded-lg mb-6">
@@ -195,20 +305,20 @@ export default function OrcaTriadWebsite() {
               <div className="mb-6">
                 <div className="text-sm font-semibold text-gray-900 mb-3">Our Debt Relationships Include:</div>
                 <ul className="space-y-2 text-gray-600 text-sm">
-                  <li className="flex items-start"><span className="mr-2">•</span> Commercial banks and regional lenders</li>
-                  <li className="flex items-start"><span className="mr-2">•</span> Debt funds and specialty lenders</li>
-                  <li className="flex items-start"><span className="mr-2">•</span> Insurance companies</li>
-                  <li className="flex items-start"><span className="mr-2">•</span> Institutional lenders and CDFIs</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Commercial banks and regional lenders</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Debt funds and specialty lenders</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Insurance companies</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Institutional lenders and CDFIs</li>
                 </ul>
               </div>
 
               <div className="mb-6">
                 <div className="text-sm font-semibold text-gray-900 mb-3">Transaction Types:</div>
                 <ul className="space-y-2 text-gray-600 text-sm">
-                  <li className="flex items-start"><span className="mr-2">•</span> Acquisition financing</li>
-                  <li className="flex items-start"><span className="mr-2">•</span> Construction and development loans</li>
-                  <li className="flex items-start"><span className="mr-2">•</span> Bridge financing</li>
-                  <li className="flex items-start"><span className="mr-2">•</span> Recapitalizations and refinancing</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Acquisition financing</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Construction and development loans</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Bridge financing</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Recapitalizations and refinancing</li>
                 </ul>
               </div>
 
@@ -230,25 +340,60 @@ export default function OrcaTriadWebsite() {
               <div className="mb-6">
                 <div className="text-sm font-semibold text-gray-900 mb-3">Our Equity Relationships Include:</div>
                 <ul className="space-y-2 text-gray-600 text-sm">
-                  <li className="flex items-start"><span className="mr-2">•</span> Private equity funds</li>
-                  <li className="flex items-start"><span className="mr-2">•</span> Family offices</li>
-                  <li className="flex items-start"><span className="mr-2">•</span> Pension funds and endowments</li>
-                  <li className="flex items-start"><span className="mr-2">•</span> Sovereign wealth funds</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Private equity funds</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Family offices</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Pension funds and endowments</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Sovereign wealth funds</li>
                 </ul>
               </div>
 
               <div className="mb-6">
                 <div className="text-sm font-semibold text-gray-900 mb-3">Transaction Types:</div>
                 <ul className="space-y-2 text-gray-600 text-sm">
-                  <li className="flex items-start"><span className="mr-2">•</span> Growth capital and expansion</li>
-                  <li className="flex items-start"><span className="mr-2">•</span> Joint venture equity</li>
-                  <li className="flex items-start"><span className="mr-2">•</span> Preferred equity structures</li>
-                  <li className="flex items-start"><span className="mr-2">•</span> Shareholder liquidity solutions</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Growth capital and expansion</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Joint venture equity</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Preferred equity structures</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Shareholder liquidity solutions</li>
                 </ul>
               </div>
 
               <a href="#contact" className="inline-flex items-center text-gray-900 hover:text-gray-600 transition-colors text-sm font-medium">
                 Discuss Equity Capital <ChevronRight className="ml-1 w-4 h-4" />
+              </a>
+            </div>
+
+            {/* Advisory & Industry Experts */}
+            <div className="bg-white p-10 rounded-lg border border-gray-200 hover:border-gray-900 transition-all">
+              <div className="w-12 h-12 bg-gray-900 text-white flex items-center justify-center rounded-lg mb-6">
+                <Briefcase className="w-6 h-6" />
+              </div>
+              <h3 className="text-2xl font-light text-gray-900 mb-4">Advisory &amp; Industry Experts</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Beyond capital placement, we provide strategic advisory services backed by a curated network of industry experts who bring specialized knowledge to every engagement.
+              </p>
+              
+              <div className="mb-6">
+                <div className="text-sm font-semibold text-gray-900 mb-3">Advisory Capabilities:</div>
+                <ul className="space-y-2 text-gray-600 text-sm">
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Capital structure optimization</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Market analysis and positioning</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Regulatory and compliance guidance</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Cross-border transaction advisory</li>
+                </ul>
+              </div>
+
+              <div className="mb-6">
+                <div className="text-sm font-semibold text-gray-900 mb-3">Expert Network:</div>
+                <ul className="space-y-2 text-gray-600 text-sm">
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Real estate and development specialists</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Legal and compliance professionals</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> Tax and financial structuring advisors</li>
+                  <li className="flex items-start"><span className="mr-2">&bull;</span> International market consultants</li>
+                </ul>
+              </div>
+
+              <a href="#contact" className="inline-flex items-center text-gray-900 hover:text-gray-600 transition-colors text-sm font-medium">
+                Explore Advisory Services <ChevronRight className="ml-1 w-4 h-4" />
               </a>
             </div>
           </div>
@@ -266,7 +411,7 @@ export default function OrcaTriadWebsite() {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-gray-900 text-white rounded-full flex items-center justify-center text-2xl font-light mx-auto mb-4">1</div>
-              <h4 className="text-lg font-medium text-gray-900 mb-3">Discovery & Strategy</h4>
+              <h4 className="text-lg font-medium text-gray-900 mb-3">Discovery &amp; Strategy</h4>
               <p className="text-sm text-gray-600 leading-relaxed">Understanding your objectives and developing a tailored capital strategy aligned with your goals.</p>
             </div>
             <div className="text-center">
@@ -276,12 +421,12 @@ export default function OrcaTriadWebsite() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-gray-900 text-white rounded-full flex items-center justify-center text-2xl font-light mx-auto mb-4">3</div>
-              <h4 className="text-lg font-medium text-gray-900 mb-3">Negotiation & Structuring</h4>
+              <h4 className="text-lg font-medium text-gray-900 mb-3">Negotiation &amp; Structuring</h4>
               <p className="text-sm text-gray-600 leading-relaxed">Managing all communications and negotiating terms that optimize pricing and flexibility.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-gray-900 text-white rounded-full flex items-center justify-center text-2xl font-light mx-auto mb-4">4</div>
-              <h4 className="text-lg font-medium text-gray-900 mb-3">Execution & Closing</h4>
+              <h4 className="text-lg font-medium text-gray-900 mb-3">Execution &amp; Closing</h4>
               <p className="text-sm text-gray-600 leading-relaxed">Shepherding the transaction through documentation and closing for smooth execution.</p>
             </div>
           </div>
@@ -332,26 +477,43 @@ export default function OrcaTriadWebsite() {
             </div>
             <div className="md:col-span-3">
               <div className="inline-block px-4 py-1 bg-gray-100 text-gray-700 text-sm mb-4 rounded-full">
-                Principal & Founder
+                Principal &amp; Founder
               </div>
               <h2 className="text-4xl font-light text-gray-900 mb-6">Meet Sandra Flores</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed mb-8">
                 <p>
-                  Sandra Flores founded Orca Triad Advisors with a vision to provide developers and businesses with sophisticated capital advisory typically reserved for large institutional sponsors. With 15 years of experience in private capital markets, Sandra has built a reputation for integrity, creativity, and results.
+                  Sandra Flores founded Orca Triad Advisors with a vision to provide developers and businesses with sophisticated capital advisory typically reserved for large institutional sponsors. With 20 years of experience in private capital markets, Sandra has built a reputation for integrity, creativity, and results.
                 </p>
                 <p>
                   Throughout her career, Sandra has arranged hundreds of millions in debt and equity placements across commercial real estate, infrastructure, and specialty assets. Her deep relationships with institutional lenders, private equity funds, family offices, and debt funds enable her clients to access capital that moves transactions forward.
                 </p>
                 <p>
-                  Based in South Florida, Sandra has become a trusted advisor to the region's most active developers and investors. Her expertise spans the full capital stack—from senior debt through preferred and common equity—and across all asset classes, with particular strength in multifamily, mixed-use, and commercial development.
+                  Based in South Florida and serving clients across the United States, Europe, and South America, Sandra has become a trusted advisor to developers and investors navigating complex transactions. Her expertise spans the full capital stack&mdash;from senior debt through preferred and common equity&mdash;and across all asset classes, with particular strength in multifamily, mixed-use, and commercial development.
                 </p>
               </div>
-              <a href="https://www.linkedin.com/in/sandra-flores-47829714/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gray-900 hover:text-gray-600 transition-colors">
+              <a href="https://www.linkedin.com/in/sandra-flores" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gray-900 hover:text-gray-600 transition-colors">
                 <Linkedin className="w-5 h-5" />
                 <span className="font-medium">Connect on LinkedIn</span>
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Join Our Pod CTA */}
+      <section className="py-20 px-6 bg-gray-900 text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-light mb-6">Join Our Pod</h2>
+          <p className="text-xl text-gray-400 mb-4 leading-relaxed">
+            Are you a business expert, industry specialist, or capital markets professional looking to collaborate on complex transactions?
+          </p>
+          <p className="text-lg text-gray-500 mb-10 leading-relaxed">
+            Orca Triad partners with experienced professionals who bring specialized expertise to our clients' most critical capital needs. Join our network of trusted advisors and help shape the future of private capital markets.
+          </p>
+          <a href="#contact" className="inline-flex items-center justify-center px-10 py-4 bg-white text-gray-900 hover:bg-gray-100 transition-colors text-lg font-medium">
+            Join Our Pod
+            <ChevronRight className="ml-2 w-5 h-5" />
+          </a>
         </div>
       </section>
 
@@ -393,7 +555,7 @@ export default function OrcaTriadWebsite() {
                     <Linkedin className="w-5 h-5 text-gray-600 mt-1" />
                     <div>
                       <div className="text-sm text-gray-500 mb-1">LinkedIn</div>
-                      <a href="https://www.linkedin.com/in/sandra-flores-47829714/" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">Sandra Flores</a>
+                      <a href="https://www.linkedin.com/in/sandra-flores" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">Sandra Flores</a>
                     </div>
                   </div>
                 </div>
@@ -460,6 +622,8 @@ export default function OrcaTriadWebsite() {
                         <option value="equity">Equity Placement</option>
                         <option value="both">Debt + Equity</option>
                         <option value="refinancing">Refinancing</option>
+                        <option value="advisory">Advisory Services</option>
+                        <option value="partnership">Join Our Pod</option>
                         <option value="general">General Inquiry</option>
                       </select>
                     </div>
@@ -544,13 +708,9 @@ export default function OrcaTriadWebsite() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-12 mb-12">
             <div>
-              <img 
-		src="/logo-white.png" 
-		alt="Orca Triad Advisors" 
-		className="h-8 mb-4" 
-	/>
+              <img src="/logo-white.png" alt="Orca Triad Advisors" className="h-8 mb-4" />
               <p className="text-gray-400 text-sm leading-relaxed">
-                Strategic Capital Placement | Debt & Equity Advisory
+                Strategic Capital Placement | Debt &amp; Equity Advisory
               </p>
             </div>
             <div>
@@ -573,7 +733,7 @@ export default function OrcaTriadWebsite() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2024 Orca Triad Advisors. All rights reserved.</p>
+            <p>&copy; 2025 Orca Triad Advisors. All rights reserved.</p>
           </div>
         </div>
       </footer>
