@@ -537,6 +537,9 @@ export default function OrcaTriadWebsite() {
           <div className="grid md:grid-cols-5 gap-12">
             <div className="md:col-span-2">
               <div className="bg-white p-8 rounded-lg border border-gray-200">
+                <div className="mb-6">
+                  <img src="/images/sandra-flores.png" alt="Sandra Flores" className="w-full h-auto rounded-lg mb-4" />
+                </div>
                 <h3 className="text-xl font-medium text-gray-900 mb-6">Sandra Flores</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
