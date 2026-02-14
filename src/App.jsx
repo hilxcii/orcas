@@ -40,42 +40,48 @@ export default function OrcaTriadWebsite() {
       type: "Multifamily",
       location: "Miami, FL",
       amount: "$45M Construction Loan",
-      description: "Secured senior construction financing for 180-unit luxury high-rise. Structured multi-tranche debt facility with regional bank and mezzanine lender."
+      description: "Secured senior construction financing for 180-unit luxury high-rise. Structured multi-tranche debt facility with regional bank and mezzanine lender.",
+      image: "/images/project-brickell.jpg"
     },
     {
       title: "Coral Gables Mixed-Use",
       type: "Mixed-Use",
       location: "Coral Gables, FL",
       amount: "$32M Debt + Equity",
-      description: "Arranged complete capital stack including senior debt and preferred equity for ground-up mixed-use development."
+      description: "Arranged complete capital stack including senior debt and preferred equity for ground-up mixed-use development.",
+      image: "/images/project-coral-gables.jpg"
     },
     {
       title: "Fort Lauderdale Office Tower",
       type: "Office",
       location: "Fort Lauderdale, FL",
       amount: "$28M Acquisition Financing",
-      description: "Placed bridge acquisition financing for Class A office building, enabling sponsor to capitalize on market opportunity."
+      description: "Placed bridge acquisition financing for Class A office building, enabling sponsor to capitalize on market opportunity.",
+      image: "/images/project-fort-lauderdale.jpg"
     },
     {
       title: "West Palm Industrial Portfolio",
       type: "Industrial",
       location: "West Palm Beach, FL",
       amount: "$55M Portfolio Loan",
-      description: "Structured portfolio financing across five industrial assets, optimizing leverage and cash flow for institutional investor."
+      description: "Structured portfolio financing across five industrial assets, optimizing leverage and cash flow for institutional investor.",
+      image: "/images/project-west-palm.jpg"
     },
     {
       title: "Miami Beach Hospitality",
       type: "Hospitality",
       location: "Miami Beach, FL",
       amount: "$40M Recapitalization",
-      description: "Facilitated complete recapitalization including refinancing and growth equity from family office investor."
+      description: "Facilitated complete recapitalization including refinancing and growth equity from family office investor.",
+      image: "/images/project-miami-beach.jpg"
     },
     {
       title: "South Florida Multifamily Portfolio",
       type: "Multifamily",
       location: "Multiple Markets",
       amount: "$72M Equity Placement",
-      description: "Raised institutional equity from pension fund for value-add multifamily portfolio across South Florida submarkets."
+      description: "Raised institutional equity from pension fund for value-add multifamily portfolio across South Florida submarkets.",
+      image: "/images/project-multifamily.jpg"
     }
   ];
 
@@ -95,8 +101,11 @@ export default function OrcaTriadWebsite() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6 bg-gradient-to-br from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto">
+      <section className="pt-32 pb-20 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img src="/images/hero-window.jpg" alt="" className="w-full h-full object-cover opacity-10" />
+        </div>
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">
             <div className="inline-block px-4 py-1 bg-gray-100 text-gray-700 text-sm mb-6 rounded-full">
               20 Years Experience | Domestic &amp; International Markets
@@ -444,8 +453,8 @@ export default function OrcaTriadWebsite() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div key={index} className="bg-white rounded-lg overflow-hidden border border-gray-200 hover:border-gray-900 transition-all group">
-                <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                  <Building2 className="w-16 h-16 text-gray-400 group-hover:text-gray-600 transition-colors" />
+                <div className="h-48 bg-gray-100 overflow-hidden">
+                  <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                 </div>
                 <div className="p-6">
                   <div className="inline-block px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full mb-3">
