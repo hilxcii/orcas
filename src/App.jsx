@@ -480,8 +480,8 @@ export default function OrcaTriadWebsite() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-5 gap-12 items-center">
             <div className="md:col-span-2">
-              <div className="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg flex items-center justify-center">
-                <Users className="w-32 h-32 text-gray-400" />
+              <div className="aspect-square rounded-lg overflow-hidden">
+                <img src="/images/sandra-flores.png" alt="Sandra Flores" className="w-full h-full object-cover" />
               </div>
             </div>
             <div className="md:col-span-3">
@@ -537,9 +537,6 @@ export default function OrcaTriadWebsite() {
           <div className="grid md:grid-cols-5 gap-12">
             <div className="md:col-span-2">
               <div className="bg-white p-8 rounded-lg border border-gray-200">
-                <div className="mb-6">
-                  <img src="/images/sandra-flores.png" alt="Sandra Flores" className="w-full h-auto rounded-lg mb-4" />
-                </div>
                 <h3 className="text-xl font-medium text-gray-900 mb-6">Sandra Flores</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
