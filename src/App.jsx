@@ -103,7 +103,7 @@ export default function OrcaTriadWebsite() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="/images/hero-window.jpg" alt="" className="w-full h-full object-cover opacity-10" />
+          <img src="/images/hero-window.jpg" alt="" className="w-full h-full object-cover opacity-35" />
         </div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">
